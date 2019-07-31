@@ -9,4 +9,4 @@ browser.switch_to.window(browser.window_handles[1])  # 切换到第二个选项�
 browser.get('https://www.taobao.com')
 time.sleep(1)
 browser.switch_to.window(browser.window_handles[0]) # 切换到第二个选项卡
-browser.get('https://www.baidu.com')
+browser.get('https://www.baidu.com')# dsffsdfsdfsdfdwf
