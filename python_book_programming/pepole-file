@@ -1,0 +1,6 @@
+bob
+name=>'Bob Smith'
+age=>'42'
+pay=>3000
+job=>'dev'
+enddb.

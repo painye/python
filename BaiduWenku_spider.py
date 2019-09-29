@@ -55,5 +55,5 @@ def get_page(url, data):
 
 
 if __name__ == '__main__':
-    url = "https://wenku.baidu.com/view/3367b5f8770bf78a65295442.html"
+    url = "https://wenku.baidu.com/view/679e0036a200a6c30c22590102020740bf1ecd71.html"
     get_num(url)

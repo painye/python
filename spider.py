@@ -5,13 +5,6 @@ from bs4 import BeautifulSoup
 import json
 import re
 
-import pymongo
-from config import *
-
-# 声明mongodb数据库对象
-client = pymongo.MongoClient(MONGO_URL)
-db = client[MONGO_DB]
-
 
 def get_page_index(offset, keyword):   # 索引页的请求,返回源代码
     data = {
@@ -63,7 +56,7 @@ def parse_page_index(html):
 # 请求详情页
 def get_page_detail(url):
     headers = {
-        # 加入headers获取正确的responsea源代码
+        # 加入headers获取正确的response源代码
         'cookie': 'tt_webid=6718301413208049156; __utma=24953151.1804983764.1535863290.1535863290.1535863290.1; tt_webid=6718301413208049156; WEATHER_CITY=%E5%8C%97%E4%BA%AC; tt_webid=6718301413208049156; csrftoken=fd6d8d5cd96e91d1424b2eccd0804476; uuid="w:b9ae73b2a2324149ace87238abf7ba76"; __tasessionId=wb5szu3cv1564633040095',
         'upgrade-insecure-requests': '1',
         'user-agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
